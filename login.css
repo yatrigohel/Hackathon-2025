@@ -1,0 +1,75 @@
+/* Background: Translucent Food Theme */
+body {
+  margin: 0;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1601050690597-4c1f52b17447?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-container {
+  backdrop-filter: blur(12px) brightness(0.9);
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  padding: 50px 40px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeSlide 1.2s ease;
+}
+
+.login-card h1 {
+  font-family: 'Pacifico', cursive;
+  color: #FF6B6B;
+  margin-bottom: 10px;
+}
+
+.login-card p {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #FF6B6B, #FFD93D);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255,107,107,0.3);
+}
+
+.signup-text {
+  margin-top: 20px;
+}
+
+.signup-text a {
+  color: #FF6B6B;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Small fade-slide entry */
+@keyframes fadeSlide {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
